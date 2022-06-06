@@ -21,6 +21,10 @@ header{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo{
     width: 100px;
     padding: 0 5px;
