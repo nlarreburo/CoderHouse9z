@@ -1,0 +1,15 @@
+.shop{
+    background-color: #fff;
+
+    & h4:hover,
+    & img:hover{
+        cursor: pointer;
+    }
+
+    & h2{
+        color: rgb(110, 0, 200);
+        font-size: 3.5rem;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}

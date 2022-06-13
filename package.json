@@ -1,0 +1,25 @@
+{
+  "name": "1.2",
+  "version": "1.0.0",
+  "description": "Paquete SASS para CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/destino.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlarreburo/CoderHouse9z.git"
+  },
+  "author": "Nicolas Larreburo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlarreburo/CoderHouse9z/issues"
+  },
+  "homepage": "https://github.com/nlarreburo/CoderHouse9z#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
