@@ -80,3 +80,43 @@ footer h4 {
     cursor: pointer; }
   .gallery__light-box:target {
     transform: scale(1); }
+
+.team-block {
+  justify-content: center; }
+  .team-block .card-body
+img {
+    min-width: 100%; }
+  .team-block h5 {
+    font-size: 2rem;
+    text-align: center; }
+  .team-block p {
+    font-size: 2rem;
+    margin: 2rem 0; }
+
+@media (min-width: 1440px) {
+  .team-block .card-body
+p {
+    font-size: 1.5rem;
+    margin: 1.3rem 0; } }
+
+@media (max-width: 1024px) {
+  .team-block .card-body {
+    display: flex;
+    justify-content: center; }
+  .team-block h5 {
+    display: none; }
+  .team-block p {
+    margin: 0 1rem;
+    font-size: 1.3rem; }
+  .team-block .ico {
+    display: none; } }
+
+@media (min-width: 1440px) {
+  .team-block .card-body
+p {
+    font-size: 1.5rem;
+    margin: 1.3rem 0; } }
+
+@media (max-width: 425px) {
+  .team-block .card-body {
+    display: none; } }

@@ -9,6 +9,10 @@ body{
     background: rgb(230, 228, 233);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* header */
 
 
@@ -16,16 +20,12 @@ header{
     background: rgb(100, 20, 180);
 }
 
-
-
-html{
-    scroll-behavior: smooth;
-}
-
 .logo{
     width: 100px;
     padding: 0 5px;
 }
+
+
 
 /* shop */
 .shop img{
@@ -63,7 +63,6 @@ html{
     color: rgb(110, 0, 200);
     font-size: 3.5rem;
     padding: 0px 50px 50px 0;
-    box-shadow: rgba(0, 0, 0, 30);
     text-align: end;
 }
 
@@ -128,9 +127,6 @@ footer h4{
     color: red;
 }
 
-
-
-/* HTML TEAM */
 
 /* Carta */
 .team-block img{

@@ -1,0 +1,60 @@
+.team-block{
+    justify-content: center;
+    & .card-body 
+    img{
+        min-width: 100%;
+    }
+    h5{
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width:1440px){
+    .team-block{
+        & .card-body
+        p{
+            font-size: 1.5rem;
+            margin: 1.3rem 0;
+        }
+    }
+}
+@media (max-width:1024px){
+    .team-block{
+        & .card-body{
+            display: flex;
+            justify-content: center;
+        }
+        & h5{
+            display: none;
+        }
+        & p{
+            margin: 0 1rem;
+            font-size: 1.3rem;
+        }
+        & .ico{
+            display: none;
+        }
+    }
+}
+
+@media (min-width:1440px){
+    .team-block{
+        & .card-body
+        p{
+            font-size: 1.5rem;
+            margin: 1.3rem 0;
+        }
+    }
+}
+@media (max-width:425px){
+    .team-block{
+        & .card-body{
+            display: none;
+        }
+    }
+}
