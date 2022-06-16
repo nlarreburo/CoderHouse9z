@@ -1,6 +1,7 @@
 .shop{
-    background-color: #fff;
-
+    background: rgb(38, 10, 61);
+    box-shadow: 0 0 40px 0 rgba(134, 42, 255, 1);
+    border-radius: 20px;
     & h4:hover,
     & img:hover{
         cursor: pointer;
@@ -11,5 +12,13 @@
         font-size: 3.5rem;
         padding-bottom: 50px;
         text-align: center;
+    }
+
+    & h3{
+        color: #fff;
+    }
+
+    & p{
+        color: #fff;
     }
 }

@@ -1,5 +1,11 @@
+.body_team{
+    background: #181818;
+}
 .team-block{
     justify-content: center;
+    & .card{
+        box-shadow: 0 0 40px 0 rgba(134, 42, 255, 1);
+    }
     & .card-body 
     img{
         min-width: 100%;
