@@ -4,13 +4,13 @@ footer h4{
 }
 
 .site-footer{
-    background: rgb(100, 20, 180);
+    background: map-get($colores, "background1" );
     height: 120px;
 }
 
 .icono a{
     text-decoration: none;
-    color: #fff;
+    color: map-get($colores, "color1" );
     margin: 10px;
     font-size: 30px;
 }

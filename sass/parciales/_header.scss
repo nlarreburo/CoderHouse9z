@@ -1,5 +1,5 @@
 header{
-    background: rgb(100, 20, 180);
+    background: map-get($colores, "background1" );
 }
 
 .logo{

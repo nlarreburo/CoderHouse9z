@@ -1,6 +1,6 @@
 .shop{
-    background: rgb(38, 10, 61);
-    box-shadow: 0 0 40px 0 rgba(134, 42, 255, 1);
+    background: map-get($colores, "background2");
+    box-shadow: 0 0 40px 0 map-get($colores, "color-shadow");
     border-radius: 20px;
     & h4:hover,
     & img:hover{
@@ -8,17 +8,16 @@
     }
 
     & h2{
-        color: rgb(110, 0, 200);
-        font-size: 3.5rem;
-        padding-bottom: 50px;
+        @include h-font;
+        padding: 30px 0;
         text-align: center;
     }
 
     & h3{
-        color: #fff;
+        color: map-get($colores, "color1");
     }
 
     & p{
-        color: #fff;
+        color: map-get($colores, "color1");
     }
 }

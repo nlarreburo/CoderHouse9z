@@ -1,11 +1,10 @@
 .clip{
-    background: rgb(38, 10, 61);
-    box-shadow: 0 0 40px 0 rgba(134, 42, 255, 1);
+    background: map-get($colores, "background2" );
+    box-shadow: 0 0 40px 0 map-get($colores, "color-shadow" );
     border-radius: 20px;
     & h2{
-        color: rgb(110, 0, 200);
-        font-size: 3.5rem;
-        padding: 50px 0;
+        @include h-font;
+        padding: 30px 0;
         text-align: center;
     }
 

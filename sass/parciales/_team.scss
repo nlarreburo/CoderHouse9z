@@ -1,10 +1,10 @@
 .body_team{
-    background: #181818;
+    background: map-get($colores, "background-main");
 }
 .team-block{
     justify-content: center;
     & .card{
-        box-shadow: 0 0 40px 0 rgba(134, 42, 255, 1);
+        box-shadow: 0 0 40px 0 map-get($colores, "color-shadow");
     }
     & .card-body 
     img{

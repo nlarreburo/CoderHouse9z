@@ -4,11 +4,10 @@
 
 .gallery{
     & h1{
-        color: rgb(110, 0, 200);
-        font-size: 3.3rem;
+        @include h-font;
     }
     & p{
-        color: #fff;
+        color: map-get($colores, "color1");
     }
     &__grid{
         & img{
