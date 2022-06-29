@@ -3,6 +3,32 @@
 }
 .team-block{
     justify-content: center;
+    & .card-body{
+        @media screen and (max-width:1440px) {
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        @media screen and (max-width:1260px) {
+            p{
+                font-size: 1rem;
+            }
+            & .ico{
+                display: none;
+            }
+        }
+        @media screen and (max-width:992px){
+            h5{
+                font-size: 1.7rem;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+
+    }
     & .card{
         box-shadow: 0 0 40px 0 map-get($colores, "color-shadow");
     }
@@ -11,52 +37,17 @@
         min-width: 100%;
     }
     h5{
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
     }
     p{
-        font-size: 2rem;
-        margin: 2rem 0;
+        font-size: 1.6rem;
+        margin: 1.3rem 0;
+        text-align: center;
     }
 }
 
-@media (min-width:1440px){
-    .team-block{
-        & .card-body
-        p{
-            font-size: 1.5rem;
-            margin: 1.3rem 0;
-        }
-    }
-}
-@media (max-width:1024px){
-    .team-block{
-        & .card-body{
-            display: flex;
-            justify-content: center;
-        }
-        & h5{
-            display: none;
-        }
-        & p{
-            margin: 0 1rem;
-            font-size: 1.3rem;
-        }
-        & .ico{
-            display: none;
-        }
-    }
-}
 
-@media (min-width:1440px){
-    .team-block{
-        & .card-body
-        p{
-            font-size: 1.5rem;
-            margin: 1.3rem 0;
-        }
-    }
-}
 @media (max-width:425px){
     .team-block{
         & .card-body{

@@ -1,4 +1,7 @@
 .contact{
+    @media screen and (min-width:901px) {
+        height: 100vh;
+    }
     background: map-get($colores, "background-main" );
     color: map-get($colores, "color1" );
     line-height: 1.6;
@@ -6,8 +9,7 @@
     &__conteiner{
         border-radius: 20px;
         max-width: 85%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 80px auto;
         padding: 1.5rem;
         box-shadow: 0 0 20px 0 map-get($colores, "color-shadow" );
         display: grid;
@@ -24,12 +26,14 @@
     }
 
     & h1{
+        margin: 20px auto;
         text-align: center;
         font-size: 2.4rem;
     }
 
     &__form{
         background: map-get($colores, "background2" );
+        border-radius: 15px;
 
         & form{
             display: grid;

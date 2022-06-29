@@ -105,41 +105,33 @@ footer h4 {
 
 .team-block {
   justify-content: center; }
+  @media screen and (max-width: 1440px) {
+    .team-block .card-body p {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 1260px) {
+    .team-block .card-body p {
+      font-size: 1rem; }
+    .team-block .card-body .ico {
+      display: none; } }
+  @media screen and (max-width: 992px) {
+    .team-block .card-body h5 {
+      font-size: 1.7rem; }
+    .team-block .card-body div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; } }
   .team-block .card {
     box-shadow: 0 0 40px 0 #862aff; }
   .team-block .card-body
 img {
     min-width: 100%; }
   .team-block h5 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center; }
   .team-block p {
-    font-size: 2rem;
-    margin: 2rem 0; }
-
-@media (min-width: 1440px) {
-  .team-block .card-body
-p {
-    font-size: 1.5rem;
-    margin: 1.3rem 0; } }
-
-@media (max-width: 1024px) {
-  .team-block .card-body {
-    display: flex;
-    justify-content: center; }
-  .team-block h5 {
-    display: none; }
-  .team-block p {
-    margin: 0 1rem;
-    font-size: 1.3rem; }
-  .team-block .ico {
-    display: none; } }
-
-@media (min-width: 1440px) {
-  .team-block .card-body
-p {
-    font-size: 1.5rem;
-    margin: 1.3rem 0; } }
+    font-size: 1.6rem;
+    margin: 1.3rem 0;
+    text-align: center; }
 
 @media (max-width: 425px) {
   .team-block .card-body {
@@ -150,11 +142,13 @@ p {
   color: #fff;
   line-height: 1.6;
   padding: 30px; }
+  @media screen and (min-width: 901px) {
+    .contact {
+      height: 100vh; } }
   .contact__conteiner {
     border-radius: 20px;
     max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 80px auto;
     padding: 1.5rem;
     box-shadow: 0 0 20px 0 #862aff;
     display: grid;
@@ -165,10 +159,12 @@ p {
     list-style: none;
     padding: 0; }
   .contact h1 {
+    margin: 20px auto;
     text-align: center;
     font-size: 2.4rem; }
   .contact__form {
-    background: #260a3d; }
+    background: #260a3d;
+    border-radius: 15px; }
     .contact__form form {
       display: grid;
       grid-template-columns: 1fr 1fr; }
