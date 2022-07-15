@@ -2,6 +2,12 @@
     background: map-get($colores, "background2");
     box-shadow: 0 0 40px 0 map-get($colores, "color-shadow");
     border-radius: 20px;
+    @media screen and (min-width:425px) {
+        margin: 3rem;        
+    }
+    @media screen and (max-width:425px) {
+        margin: 0.6rem;        
+    }
     & h4:hover,
     & img:hover{
         cursor: pointer;
@@ -15,6 +21,7 @@
 
     & h3{
         color: map-get($colores, "color1");
+        padding-top: 10px;
     }
 
     & p{

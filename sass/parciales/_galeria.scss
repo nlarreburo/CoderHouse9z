@@ -3,11 +3,13 @@
 }
 
 .gallery{
-    & h1{
+    & h2{
         @include h-font;
+        padding-left: 14px;
     }
     & p{
         color: map-get($colores, "color1");
+        padding-left: 14px;
     }
     &__grid{
         & img{

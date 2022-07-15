@@ -1,7 +1,9 @@
+.body-grid{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
 .contact{
-    @media screen and (min-width:901px) {
-        height: 100vh;
-    }
     background: map-get($colores, "background-main" );
     color: map-get($colores, "color1" );
     line-height: 1.6;

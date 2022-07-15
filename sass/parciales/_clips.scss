@@ -2,14 +2,25 @@
     background: map-get($colores, "background2" );
     box-shadow: 0 0 40px 0 map-get($colores, "color-shadow" );
     border-radius: 20px;
-    & h2{
+    @media screen and (min-width:425px) {
+        margin: 3rem;
+    }
+    @media screen and (max-width:425px) {
+        margin: 0.6rem;
+    }
+    h2{
         @include h-font;
         padding: 30px 0;
         text-align: center;
     }
-
+   
     iframe{
         width: 100%;
+        height: 100%;
+    }
+    div{
+        div{
+            height: 250px;
+        }
     }
 }
-

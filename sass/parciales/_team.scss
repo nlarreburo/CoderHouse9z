@@ -11,13 +11,13 @@
         }
         @media screen and (max-width:1260px) {
             p{
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             & .ico{
                 display: none;
             }
         }
-        @media screen and (max-width:992px){
+        @media screen and (max-width:991px){
             h5{
                 font-size: 1.7rem;
             }

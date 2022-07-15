@@ -4,11 +4,33 @@
   padding: 0;
   font-family: Roboto; }
 
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
 .body_index {
   background: #181818; }
 
 html {
   scroll-behavior: smooth; }
+
+.botton-up {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 50px; }
+  .botton-up:visited {
+    color: none; }
+  .botton-up:hover {
+    color: #2b59af; }
+  @media screen and (max-width: 424px) {
+    .botton-up {
+      font-size: 40px; } }
 
 header {
   background: #6414b4; }
@@ -38,6 +60,12 @@ footer h4 {
   background: #260a3d;
   box-shadow: 0 0 40px 0 #862aff;
   border-radius: 20px; }
+  @media screen and (min-width: 425px) {
+    .shop {
+      margin: 3rem; } }
+  @media screen and (max-width: 425px) {
+    .shop {
+      margin: 0.6rem; } }
   .shop h4:hover,
   .shop img:hover {
     cursor: pointer; }
@@ -47,7 +75,8 @@ footer h4 {
     padding: 30px 0;
     text-align: center; }
   .shop h3 {
-    color: #fff; }
+    color: #fff;
+    padding-top: 10px; }
   .shop p {
     color: #fff; }
 
@@ -55,23 +84,34 @@ footer h4 {
   background: #260a3d;
   box-shadow: 0 0 40px 0 #862aff;
   border-radius: 20px; }
+  @media screen and (min-width: 425px) {
+    .clip {
+      margin: 3rem; } }
+  @media screen and (max-width: 425px) {
+    .clip {
+      margin: 0.6rem; } }
   .clip h2 {
     color: #6e00c8;
     font-size: 3.5rem;
     padding: 30px 0;
     text-align: center; }
   .clip iframe {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+  .clip div div {
+    height: 250px; }
 
 .body_wallpaper {
   background: #181818; }
 
-.gallery h1 {
+.gallery h2 {
   color: #6e00c8;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  padding-left: 14px; }
 
 .gallery p {
-  color: #fff; }
+  color: #fff;
+  padding-left: 14px; }
 
 .gallery__grid img {
   width: 100%;
@@ -110,10 +150,10 @@ footer h4 {
       font-size: 1.2rem; } }
   @media screen and (max-width: 1260px) {
     .team-block .card-body p {
-      font-size: 1rem; }
+      font-size: 1.1rem; }
     .team-block .card-body .ico {
       display: none; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     .team-block .card-body h5 {
       font-size: 1.7rem; }
     .team-block .card-body div {
@@ -137,14 +177,16 @@ img {
   .team-block .card-body {
     display: none; } }
 
+.body-grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
 .contact {
   background: #181818;
   color: #fff;
   line-height: 1.6;
   padding: 30px; }
-  @media screen and (min-width: 901px) {
-    .contact {
-      height: 100vh; } }
   .contact__conteiner {
     border-radius: 20px;
     max-width: 85%;
@@ -218,4 +260,6 @@ img {
   display: block;
   font-size: 3.5rem;
   color: #fff;
-  padding: 80px 0; }
+  padding: 80px 0;
+  justify-content: center;
+  text-align: center; }
