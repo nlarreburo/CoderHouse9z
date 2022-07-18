@@ -18,5 +18,5 @@ footer{
 }
 
 .icono a i:hover{
-    color: red;
+    color: map-get($colores, "background2" );
 }

@@ -33,7 +33,17 @@ html {
       font-size: 40px; } }
 
 header {
-  background: #6414b4; }
+  background: #5912a1d9; }
+  header li a {
+    font-size: 1.18rem; }
+    header li a:hover {
+      background-color: #862aff;
+      border-radius: 7%; }
+  @media screen and (max-width: 991px) {
+    header a {
+      font-size: 1.4rem; }
+    header li {
+      margin: auto; } }
 
 .logo {
   width: 100px;
@@ -44,7 +54,7 @@ footer h4 {
   padding: 0.625rem 0; }
 
 .site-footer {
-  background: #6414b4;
+  background: #5912a1d9;
   height: 120px; }
 
 .icono a {
@@ -54,7 +64,7 @@ footer h4 {
   font-size: 30px; }
 
 .icono a i:hover {
-  color: red; }
+  color: #260a3d; }
 
 .shop {
   background: #260a3d;
